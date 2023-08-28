@@ -1,0 +1,26 @@
+192.168.2.1
+172.35.36.96
+
+[mongodb] #it is group 
+roboshop-us-dev-db-mongodb-01.joindevops.store # we keeping the all theserveres or host with formate namimng in group 
+
+[mysql]
+roboshop-us-dev-db-mysql-01.joindevops.store
+roboshop-us-dev-db-mysql-02.joindevops.store
+
+[cart]
+roboshop-in-prod-app-cart-01.joindevops.store
+roboshop-in-prod-app-cart-02.joindevops.store
+roboshop-in-prod-app-cart-03.joindevops.store
+
+[user]
+roboshop-in-prod-app-user-01.joindevops.store
+roboshop-in-prod-app-user-02.joindevops.store
+
+[db:children] #it is group of grop
+mongodb
+mysql
+
+[app:children]
+cart
+user
