@@ -1,9 +1,9 @@
-#play book
-name: ping the node
-hosts: mongodb
+#play book is list of plays,always start with -
+- name: ping the node
+  hosts: mongodb
 
 # this is list of task/modules/collectinos
-tasks:
-- name: ping the server
-  # this is the map
-  ansible.builtin.ping: 
+  tasks:
+  - name: ping the server
+    # this is the map
+    ansible.builtin.ping: 
