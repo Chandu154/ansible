@@ -1,0 +1,2 @@
+ - name: Install and run nginx #name is not a mandatory but it is the best practice.
+   hosts: mongodb
