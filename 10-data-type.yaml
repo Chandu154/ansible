@@ -4,7 +4,7 @@
   - AGE: 30 #number
   - NAME: DCR # string
   - isDevops: true #boolean
-  -  skills: # list
+  - skills: # list
     - devops
     - aws
     - docker
