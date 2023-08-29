@@ -2,8 +2,8 @@
 
 - name: testing vaiable sprecedence
   hosts: mongodb
-  vars: #variables from play
-    NAME: chandu-play
+  # vars: #variables from play
+  #   NAME: chandu-play
   #vars_files: #variables from file
   #- variables.yaml 
   # vars_prompt: #variables from prompt
@@ -21,7 +21,7 @@
    # 2. second presedence is task variables  
    # 3. 3rd precedense is file variables
    #4. prompt variables
-
+   #5.play levell variable
 
 
    
