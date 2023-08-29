@@ -1,8 +1,8 @@
 192.168.2.1
 172.35.36.96
 
-[mongodb] #it is group 
-roboshop-us-dev-db-mongodb-01.joindevops.store # we keeping the all theserveres or host with formate namimng in group 
+[mongodb] 
+roboshop-us-dev-db-mongodb-01.joindevops.store 
 
 [mongodb:vars]
 MONGO_USERNAME=mongodbadmin
