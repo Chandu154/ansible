@@ -1,0 +1,16 @@
+- name: testing vaiable sprecedence
+  hosts: mongodb
+  var: #variables from play
+    NAME: chandu-play
+  vars_files: #variables from file
+  - variables.yaml 
+  vars_prompt: #variables from prompt
+  - name: NAME
+    prompt: please enter trainer name
+    private: false      
+  tasks:  #variables from task
+  - name: variables ata task levell
+    vars:
+      NAME: chandu-task
+    ansible.builtin.debug:
+      msg: "Trainer name is {{NAME}}"    #variables from args 
