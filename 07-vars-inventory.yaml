@@ -1,6 +1,6 @@
 - name: vaiables from inventory
   hosts: mongodb
   tasks:
-  - name: printing thr mongodb username
+  - name: printing the mongodb username
     ansible.builtin.debug:
       msg: "username:{{MONGO_USERNAME}}"
