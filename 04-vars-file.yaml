@@ -1,0 +1,8 @@
+- name: variables from files
+  hosts: localhost #it is refer ansible aserver it self
+  vars_files:
+  - variables.yaml
+  task:
+  - name: 
+    ansible.builtin.debug: #it is module
+    msg: "I am learning {{COURSE}}",trainer name is {{TRAINER}} and Duration is {{DURATION}}
