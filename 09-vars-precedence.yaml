@@ -22,7 +22,8 @@
    # 3. 3rd precedense is file variables
    #4. prompt variables
    #5.play levell variable
-
+   #6 . invontary variables
+   #7. Roles variables
 
    
 #- name: testing vaiable sprecedence
