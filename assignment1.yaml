@@ -2,7 +2,7 @@
   hosts: localhost
 
   tasks: 
-  - name: checking directory exsit or not 
+  -  name: checking directory exsit or not 
     stat:
       path: "/home/centos/chandu.txt"
     rigister: practice
