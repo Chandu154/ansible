@@ -3,8 +3,11 @@
   tasks:
   - name: check roboshop user exits or not
     # we run the linux commands directly when the case ansible moduels are not available 
+    # when the user does not exists , ansible treating this failure and come out by default
+    # ignore_errors: true
     ansible.builtin.command: id roboshop
     rigister: output #id roboshop run the data store in variable name output
+    ignore_errors: true
   - name: print the command output
     ansible.builtin.debug:
       msg: "output is : {{output}}"  
