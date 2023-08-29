@@ -1,14 +1,14 @@
 - name: create user
   hosts: localhost
   tasks:
-  - name: check roboshop user exits or not
-    # we run the linux commands directly when the case ansible moduels are not available 
-    # when the user does not exists , ansible treating this failure and come out by default
+  - name: check roboshop user exist or not
+    # when you want to run linux commands directly i.e in the case ansible module not available
+    # when the user does not exists, ansible treating this failure and comeout by default
     # ignore_errors: true
     ansible.builtin.command: id roboshop
-    rigister: output #id roboshop run the data store in variable name output
+    register: out #output is variable name
     ignore_errors: true
 
   - name: print the command output
     ansible.builtin.debug:
-      msg: "output is : {{output}}"  
+      msg: "output is: {{out}}"
