@@ -9,7 +9,6 @@ MONGO_USERNAME=mongodbadmin
 MONGO_DB=categories
 NAME=chandu-inventory
 
-
 [mysql]
 roboshop-us-dev-db-mysql-01.joindevops.store
 roboshop-us-dev-db-mysql-02.joindevops.store
