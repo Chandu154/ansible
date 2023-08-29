@@ -1,8 +1,0 @@
-
-
-[mongodb]
-roboshop-us-dev-db-mongodb-01.joindevops.store
-
-[mongodb:vars]
-MONGO_USERNAME=gggg
-MONGO_DB=catagories
