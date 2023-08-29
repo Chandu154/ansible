@@ -4,6 +4,11 @@
 [mongodb] #it is group 
 roboshop-us-dev-db-mongodb-01.joindevops.store # we keeping the all theserveres or host with formate namimng in group 
 
+[mongodb:vars]
+MONGO_USERNAME=mongodbadmin
+MONGO_DB=categories
+
+
 [mysql]
 roboshop-us-dev-db-mysql-01.joindevops.store
 roboshop-us-dev-db-mysql-02.joindevops.store

@@ -5,10 +5,10 @@
   - money: 1000rs
     land: 100hecrs
   tasks: 
-  - name: inherit the values from play
+  - name: inherit the values from play #one task 
     ansible.builtin.debug:
       msg: "MONEY:{{money}},LAND:{{land}}"
-  - name: inherit the values from play and override the vaiables
+  - name: inherit the values from play and override the vaiables # second task
     vars:
     - money: 55555rs
       houses: "3 houses"
