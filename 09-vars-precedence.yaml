@@ -1,7 +1,7 @@
 
 - name: testing vaiable sprecedence
   hosts: mongodb
-  var: #variables from play
+  vars: #variables from play
     NAME: chandu-play
   vars_files: #variables from file
   - variables.yaml 
