@@ -6,10 +6,10 @@
     NAME: chandu-play
   #vars_files: #variables from file
   #- variables.yaml 
-  vars_prompt: #variables from prompt
-  - name: NAME
-    prompt: please enter trainer name
-    private: false      
+  # vars_prompt: #variables from prompt
+  # - name: NAME
+  #   prompt: please enter trainer name
+  #   private: false      
   tasks:  #variables from task
   - name: variables ata task levell
     #vars:
@@ -20,7 +20,7 @@
    # 1. first preference is command line args variables
    # 2. second presedence is task variables  
    # 3. 3rd precedense is file variables
-
+   #4. prompt variables
 
 
 
