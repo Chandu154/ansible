@@ -1,0 +1,10 @@
+- name: creat euser
+  hosts: localhost
+  tasks:
+  - name: check roboshop user exits or not
+    # we run the linux commands directly when the case ansible moduels are not available 
+    ansible.builtin.command: id roboshop
+    rigister: output #id roboshop run the data store in variable name output
+  - name: print the command output
+    ansible.builtin.debug:
+      msg: "output is : {{output}}"  
