@@ -2,7 +2,7 @@
   hosts: mongodb
   become: yes
   tasks:
-  - name: install packages
+  - name: install package
     ansible.builtin.yum:
       name: "{{item.name}}"
       state: "{{item.state}}"
@@ -11,4 +11,4 @@
     - {name: 'nginx', state: 'absent'}
     - {name: 'postfix', state: 'installed'}
     - {name: 'cyrus-sasl-plain', state: 'absent'}
-    - {name: 'mailx', state: 'installed'}
+    - { name: 'mailx', state: 'installed' }
