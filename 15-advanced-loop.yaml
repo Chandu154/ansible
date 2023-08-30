@@ -2,9 +2,10 @@
   hosts: localhost
   tasks:
   - name: install packages
-    ansible.builtin.yum
+    ansible.builtin.yum:
       name: "{{item.name}}"
-      state: "{{item.state}}"  
+      state: "{{item.state}}"
+    #list of map    
     loop:
     - {name: 'nginx', state: 'absent'}
     - {name: 'postfix', state: 'installed'}
