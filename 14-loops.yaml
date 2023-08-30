@@ -4,8 +4,8 @@
   tasks:
   - name: Install packages
     ansible.builtin.yum:
-    name: "{{item}}"
-    state: Installed
+      name: "{{item}}"
+      state: Installed
     loop:
     - nginx
     - postmap
