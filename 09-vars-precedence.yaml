@@ -1,6 +1,6 @@
 # we given the same variable name 'NAME' from play,file,prompt,args,task and given the print and checking the which vlue will print
 
-- name: testing vaiable sprecedence
+- name: testing vaiables precedence
   hosts: mongodb
   # vars: #variables from play
   #   NAME: chandu-play
