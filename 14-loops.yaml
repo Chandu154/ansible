@@ -1,5 +1,6 @@
 - name: Install packages
-  hosts:  localhost
+  hosts: mongodb
+  become: yes
   tasks:
   - name: Install packages
     ansible.builtin.yum:
