@@ -1,7 +1,7 @@
-- name: loop
-  hosts: localhost #for local hosts no need to give the username and password
+- name: loops example
+  hosts: localhost #for local hosts no need to give the username and password from command line
   tasks:
-  - name: print the loop values
+  - name: print the names
     ansible.builtin.debug:
       msg: "Hello {{item}}"
     loop:
