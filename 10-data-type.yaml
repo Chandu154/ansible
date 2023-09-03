@@ -61,3 +61,6 @@
     ansible.builtin.debug:
       msg: "{{EXPERIENCE}}"
   
+  - name: print Map variable specfic map values
+    ansible.builtin.debug:
+      msg: "{{EXPERIENCE.AWS}}"
